@@ -1,0 +1,163 @@
+
+*{
+    margin:0px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #fdfffb;
+    }
+body{
+    background-image: url(/Images/coloseum.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+.top-nav-bar{
+    width: 100%;
+    margin: auto;
+    background-color: #26565b;
+    animation-name: colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+@keyframes colors{
+    0%{background-color: #26565b;}
+    50%{background-color: #80b7be;}
+    100%{background-color: #26565b;}
+    }
+#main-list{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 10px;
+    height:60px;
+    border: 3px solid white;
+    }
+.main-list-li{
+    background-color: #26565b;
+    margin: 15px 7px 0px 16px;
+    font-size: 18px;
+    padding-top: 8px;
+    }
+    /* top nav bar animation  */
+.main-list-li{
+    animation-name: colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+@keyframes colors{
+    0%{background-color: #26565b;}
+    50%{background-color: #7ecad4;}
+    100%{background-color: #26565b;}
+    }
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    }
+.left-nav-bar{
+    width:30%;
+    height: 430px;
+    margin:50px 10px 10px 50px;
+    border: 4px solid #fdfffb;
+    display: grid;
+    background-color:#26565b;
+    background-image: url(/Images/sun.jpg);
+    background-repeat: no-repeat;
+    }
+    /* for animation */
+.left-nav-bar{
+    animation: 3s ease-out anim;
+    }
+@keyframes anim{
+    0%{transform: rotateZ(0);}
+    25%{transform: rotatez(100deg);}
+    75%{transform: rotateY(150deg);}
+    }
+.titles{
+    margin: 10px 0px;
+    padding: 10px 10px 10px 40px;
+    }
+.top-bar{
+    width: 100%;
+    height:70px;
+    background-color: #5699a2;
+    } 
+#profilepic{
+    width: 150px;
+    height: 145px;
+    border-radius: 50%;
+    border: 2px solid #fdfffb;
+    margin: auto;
+    }
+.left-nav-info{
+    margin: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    }
+a{
+    text-decoration: none;
+    color: #e1c28b;
+    }
+.contact-info{
+    display: flex;
+list-style: none;
+    }
+.info-list{
+    margin: 0px 30px 10px 24px;
+    }
+#picChanger{
+    margin: auto;
+    }
+.btns{
+    width: 80px;
+    height: 30px;
+    background-color: #27717b;
+    margin: auto;
+    box-shadow: 2px 2px 4px whitesmoke;
+    animation-name: colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    }
+@keyframes colors{
+    0%{background-color: #26565b;}
+    50%{background-color: #80b7be;}
+    100%{background-color: #26565b;}
+
+    }
+/* right side */
+.right-nav{
+    width:100%;
+    height: 210px;
+    margin:50px 10px 10px 50px;
+    border: 4px solid #fdfffb;
+    display: grid;
+    background-color:#26565b;
+    background-image: url(/Images/sun.jpg);
+    background-repeat: no-repeat;
+    }
+.second-right-nav{
+    width:100%;
+    height: 230px;
+    margin:50px 10px 10px 50px;
+    border: 4px solid #fdfffb;
+    display: grid;
+    background-color:#26565b;
+    background-image: url(/Images/sun.jpg);
+    background-repeat: no-repeat;
+    }
+/* bottom nav */
+.bottom-nav{
+    width:25%;
+    height: 250px;
+    border: 4px solid #fdfffb;
+    display:flex;
+    flex-direction: column;
+    background-color:#26565b;
+    background-image: url(/Images/sun.jpg);
+    background-repeat: no-repeat;
+    margin: auto;
+    }
+#contact-title,#appointmens{
+    margin: auto;
+    }
+
+
+

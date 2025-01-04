@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dojo Weather</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- top Nav Bar -->
+        <div class="top-navbar">
+            <h1>Dojo Weather</h1>
+            <ul class="top-cities">
+                <li id="cities" onclick="clickAlert()">Chicago</li>
+                <li id="cities" onclick="clickAlert()">Burbank</li>
+                <li id="cities" onclick="clickAlert()">Dallas</li>
+            </ul>
+        </div>
+        <div class="main-top">
+            <h2>San Jose</h2>
+            <div class="temp">
+                <!-- tempreture type changer -->
+                <label>Show Tepreture in </label>
+                <select name="tempSelector" id="tempSelector" onchange="changeTmpValue(value)">
+                    <option value="celisus">°C</option>
+                    <option value="fehrenheit">°F</option>
+                </select>
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- Middle Section  -->
+        <div class="mid-items">
+            <section>
+                <h4 class="daysNwthr">Today</h4>
+                <img src="Icons/some_rain.png" alt="rain" class="weather-icons">
+                <p class="daysNwthr">Some Rain</p>
+                <div class="temp-value">
+                    <p class="red"><span id="degree">18</span>°</p>
+                    <p class="blue"><span id="degree">14</span>°</p>
+                </div>
+            </section>
+            <section>
+                <h4 class="daysNwthr">Tommorow</h4>
+                <img src="Icons/some_sun.png" alt="rain" class="weather-icons">
+                <p class="daysNwthr">Sunny</p>
+                <div class="temp-value">
+                    <p class="red"><span id="degree">22</span>°</p>
+                    <p class="blue"><span id="degree">20</span>°</p>
+                </div>
+            </section>
+            <section>
+                <h4 class="daysNwthr">Friday</h4>
+                <img src="Icons/some_clouds.png" alt="rain" class="weather-icons">
+                <p class="daysNwthr">Cloudy</p>
+                <div class="temp-value">
+                    <p class="red"><span id="degree">22</span>°</p>
+                    <p class="blue"><span id="degree">16</span>°</p>
+                </div>
+            </section>
+            <section>
+                <h4 class="daysNwthr">Saturday</h4>
+                <img src="Icons/some_sun.png" alt="rain" class="weather-icons">
+                <p class="daysNwthr">Sunny</p>
+                <div class="temp-value">
+                    <p class="red"><span id="degree">26</span>°</p>
+                    <p class="blue"><span id="degree">22</span>°</p>
+                </div>
+            </section>
+        </div>
+        <!-- Bottom Section "Cockies" -->
+         <div class="btm-section">
+            <img src="Icons/cookie.png" alt="cookies icon" id="cookie-icon">
+            <div class="cookie-msg">
+                <h4 id="cookie-head">Stop Cookie Time</h4>
+                <p id="cookie-info">We use Cookies (Sadly not the edible ones) to personalies<br> 
+                content and ads to provide social media featres <br>and analyze our traffic <a href="#" alt="read more">Read more....</a></p>
+            </div>
+            <button id="cookie-btn" onclick="removeCookie()">I Accept</button>
+         </div>
+    </body>
+    <script src="scripte.js"></script>
+    </html>

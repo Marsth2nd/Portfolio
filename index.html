@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Web Fund Final Project</title>
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body> 
+        <!-- top nav bar -->
+        <div class="top-nav-bar">
+            <ul id="main-list">
+                <li class="main-list-li"><a href="/pages/education/education.html">Education</a></li>
+                <li class="main-list-li"><a href="/pages//skills/skills.html">Skills</a></li>
+                <li class="main-list-li"><a href="/pages/contact/contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+        <!-- left nav -->
+        <div class="container">
+            <div class="left-nav-bar">
+                <div class="top-bar" class="left-nav-info">
+                     <h1 class="titles">Personal Information</h1></div>
+                    <img src="/Images/mypic.jpg" alt="profile-pic" id="profilepic">
+                    <h2 class="left-nav-info">Muhamed M Iwinah</h2>
+                    <h4 class="left-nav-info">A.K.A Marcelo</h4>
+                    <ul class="contact-info left-nav-info">
+                        <li class="info-list"><a href="#">E-mail</a></li>
+                        <li class="info-list"><a href="#">Linked In</a></li>
+                        <li class="info-list"><a href="https://github.com/Marsth2nd" target="_blank">Github</a></li>
+                    </ul>
+                    <a href="#" id="picChanger" onclick="changePic()">Change Picture...</a>
+                    <button class="btns" onclick="hideSection()">Hide Info...</button>
+                </div>
+            <!-- right side -->
+             <div>
+                <div class="right-nav">
+                    <div class="top-bar">
+                        <h1 class="titles">Education</h1>
+                    </div>
+                    <ul>
+                        <li>Bachelor In Tourism And Acheology |<a href="https://www.hebron.edu/index.php/en/" target="_blank">Hebron University</a> </li>
+                        <li>Full-Stack Development | <a href="https://axsos.academy/" target="_blank">Axsos Academy</a></li>
+                    </ul>
+                </div>
+                <div class="second-right-nav">
+                    <div class="top-bar">
+                        <h1 class="titles"> Skills</h1>
+                        <ul>
+                            <li>Languages: Arabic, English, Hebrew, Spanish</li>
+                            <li>Web Fundementals: JavaScript, CSS, HTML</li>
+                            <li>Amadeus</li>
+                            <li>Poetery Analysis</li>
+                            <li>Maintenance and Restoration of Antiquities</li>
+                        </ul>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- bottom nav -->
+    <div class="bottom-nav">
+        <div class="top-bar">
+            <h2 class="titles" id="contact-me"> Contact Me ....</h2>
+        </div>
+        <h3 id="contact-title">Book An Appointmen</h3>
+        <p id="appointmens"> <span id="bookNum">5</span> Appointments Availlble This Week</p>
+        <button class="btns" id="bookbtn" onclick="bookApp()">Book Now</button>
+    </div>
+    </body>
+    <script src="script.js"></script>
+</html>
