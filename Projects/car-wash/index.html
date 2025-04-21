@@ -10,7 +10,7 @@
         <!-- top nav bar -->
         <div class="top-nav-bar">
             <div class="top-nav-left-side">
-                <img src="/WebFund/logo.png" alt="company logo">
+                <img src="./WebFund/logo.png" alt="company logo">
                     <div>
                     <h1>AL-Ameer</h1>
                     <p>We Care Your <a href="#">Car</a></p>
@@ -30,9 +30,9 @@
          <div class="mid-nav">
             <div class="mid-nav-info">
             <h1 id="mid-nav-title">Best Car Services<br> in The Town</h1>
-            <Button class="body-btns" onclick="removeIt(this)">Show More</Button>
+            <Button class="body-btns" id="showbtn" onclick="removeIt()">Show More</Button>
         </div>
-            <img src="WebFund/bluecar.png" alt="blue car" id="blue-car-img" id="blueCarPic" onclick="changePic()">
+            <img src="./WebFund/bluecar.png" alt="blue car" class="blue-car-img" id="blueCarPic" onclick="changePic()">
          </div>
          <!-- second mid nav (sections) -->
          <div class="mid-title-nav">
@@ -41,80 +41,80 @@
          <div class="mid-sections-nav">
             <section class="mid-sections">
                 <div class="inside-sections">
-                    <img src="/icons/BrakeReparing .png" alt="Break Rep" class="sections-icons">
+                    <img src="./icons/BrakeReparing .png" alt="Break Rep" class="sections-icons">
                     <div class="">
                         <h4 class="section-title">Break Repairing</h4>
-                        <Button class="sections-btns" onclick=decreaseNum()>Book now</Button>
+                        <Button class="sections-btns" onclick="decreaseNum(event)">Book now</Button>
                     </div>
                 </div>
             </section>
             <section class="mid-sections">
                 <div class="inside-sections">
-                    <img src="/icons/InteriorWashing.png" alt="Washing" class="sections-icons">
+                    <img src="./icons/InteriorWashing.png" alt="Washing" class="sections-icons">
                     <div>
                         <h4 class="section-title">Enterior Washing</h4>
-                        <Button class="sections-btns" id="bookAnAp" onclick=decreaseNum()>Book now</Button>
+                        <Button class="sections-btns" onclick="decreaseNum(event)">Book now</Button>
                     </div>
                 </div>
             </section>
             <section class="mid-sections">
                 <div class="inside-sections">
-                    <img src="/icons/VacuumCleaning.png " alt="Break Rep" class="sections-icons">
+                    <img src="./icons/VacuumCleaning.png " alt="Break Rep" class="sections-icons">
                     <div>
                         <h4 class="section-title">Vaccum Cleaning</h4>
-                        <Button class="sections-btns" id="bookAnAp" onclick=decreaseNum()>Book now</Button>
+                        <Button class="sections-btns" onclick="decreaseNum(event)">Book now</Button>
                     </div>
                 </div>
             </section>          
          </div>
          
          <div class="appointments">
-            <h4>3 Appointments Availble</h4>
-            <h4>3 Appointments Availble</h4>
-            <h4>3 Appointments Availble</h4>
+            <h4 class="appointmentNum"><span class="Anums">3</span> Appointments Availble</h4>
+            <h4 class="appointmentNum"><span class="Anums">3</span> Appointments Availble</h4>
+            <h4 class="appointmentNum"><span class="Anums">3</span> Appointments Availble</h4>
          </div>
          <div class="mid-sections-nav">
             <section class="mid-sections">
                 <div class="inside-sections">
-                    <img src="/icons/ExteriorWashing.png" alt="Break Rep" class="sections-icons">
+                    <img src="./icons/ExteriorWashing.png" alt="Break Rep" class="sections-icons">
                     <div>
                         <h4 class="section-title">Exterior Washing</h4>
-                        <Button class="sections-btns" id="bookAnAp" onclick=decreaseNum()>Book now</Button>
+                        <Button class="sections-btns" onclick="decreaseNum(event)">Book now</Button>
                     </div>
                 </div>
             </section>
             <section class="mid-sections">
                 <div class="inside-sections">
-                    <img src="/icons/OilChanging.png" alt="Break Rep" class="sections-icons">
+                    <img src="./icons/OilChanging.png" alt="Break Rep" class="sections-icons">
                     <div>
                         <h4 class="section-title">Oil Changing</h4>
-                        <Button class="sections-btns" id="bookAnAp" onclick=decreaseNum()>Book now</Button>
+                        <Button class="sections-btns" onclick="decreaseNum(event)">Book now</Button>
                     </div>
                 </div>
             </section>
             <section class="mid-sections">
                 <div class="inside-sections">
-                    <img src="/icons/SeatsWashing.png" alt="Break Rep" class="sections-icons">
+                    <img src="./icons/SeatsWashing.png" alt="Break Rep" class="sections-icons">
                     <div>
                         <h4 class="section-title">Seats Cleaning</h4>
-                        <Button class="sections-btns" id="bookAnAp"onclick=decreaseNum()>Book now</Button>
+                        <Button class="sections-btns" onclick="decreaseNum(event)">Book now</Button>
                     </div>
                 </div>
             </section>
         </div>
         <div class="appointments">
-            <h4>3 Appointments Availble</h4>
-            <h4>3 Appointments Availble</h4>
-            <h4>3 Appointments Availble</h4>
+            <h4 class="appointmentNum"><span class="Anums">3</span> Appointments Availble</h4>
+            <h4 class="appointmentNum"><span class="Anums">3</span> Appointments Availble</h4>
+            <h4 class="appointmentNum"><span class="Anums">3</span> Appointments Availble</h4>
          </div>
          <!-- bottom section -->
          <div class="mid-title-nav">
          <h2 id="mid-title">What Our Clients Say</h2>
          </div>
          <div class="bottom-nav">
-            <img src="WebFund/client.png" alt="client-pic">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto eius itaque, rem, laborum temporibus ipsam dignissimos quod repellat neque quas possimus dolorem sapiente! Assumenda sint corrupti omnis quo doloribus quam sit aliquam eum voluptates voluptas, consectetur, quisquam facilis eaque saepe voluptatibus nemo amet doloremque incidunt reiciendis eos odio rerum?</p>
-            <button id="last-btn">Read More</button>
+            <img src="./WebFund/unstisfied.png" alt="client-pic" id="client" onclick="changeClientPic()">
+            <p id="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias iusto eius itaque, rem, laborum temporibus ipsam dignissimos quod repellat neque quas possimus dolorem sapiente! Assumenda sint corrupti omnis quo doloribus quam sit aliquam eum voluptates voluptas, consectetur, quisquam facilis eaque saepe voluptatibus nemo amet doloremque incidunt reiciendis eos odio rerum?</p>
+            <button id="last-btn" onclick="changeText()">Read More</button>
               
            
         </div>

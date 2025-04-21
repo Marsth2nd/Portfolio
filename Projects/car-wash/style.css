@@ -132,7 +132,9 @@ box-shadow: 4px 4px 3px black;
     border: 2px solid black;
     height: 200px;
 }
-p{margin: auto;}
+p{
+    margin: auto;
+}
 #last-btn{
     width: 310px;
     height:45px;
